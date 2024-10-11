@@ -1,0 +1,109 @@
+- sensor:
+    entity_category: diagnostic
+    friendly_name: Renpho Air - Air Quality
+    icon: ''
+    id: '22'
+    platform: sensor
+- sensor:
+    entity_category: diagnostic
+    friendly_name: Renpho Air - Filter
+    icon: ''
+    id: '105'
+    platform: sensor
+    unit_of_measurement: '%'
+- sensor:
+    entity_category: diagnostic
+    friendly_name: Renpho Air - Fault / Error
+    icon: ''
+    id: '21'
+    platform: sensor
+- switch:
+    entity_category: None
+    friendly_name: Renpho Air - Switch
+    icon: ''
+    id: '1'
+    is_passive_entity: false
+    platform: switch
+    restore_on_reconnect: false
+- select:
+    dps_default_value: Auto
+    entity_category: config
+    friendly_name: Renpho Air - Speed
+    icon: ''
+    id: '4'
+    is_passive_entity: false
+    platform: select
+    restore_on_reconnect: false
+    select_options:
+      '1': Low
+      '2': Medium
+      '3': High
+      '4': Max
+      auto: Auto
+- switch:
+    current: '7'
+    dps_default_value: 'False'
+    entity_category: None
+    friendly_name: Renpho Air - Children Lock
+    icon: ''
+    id: '7'
+    is_passive_entity: false
+    platform: switch
+    restore_on_reconnect: false
+- switch:
+    dps_default_value: 'False'
+    entity_category: None
+    friendly_name: Renpho Air - Filter Reset
+    icon: ''
+    id: '106'
+    is_passive_entity: false
+    platform: switch
+    restore_on_reconnect: false
+- switch:
+    dps_default_value: 'false'
+    entity_category: None
+    friendly_name: Renpho Air - Sleep
+    icon: ''
+    id: '101'
+    is_passive_entity: false
+    platform: switch
+    restore_on_reconnect: false
+- select:
+    dps_default_value: Cancel
+    entity_category: config
+    friendly_name: Renpho Air - Countdown
+    icon: ''
+    id: '19'
+    is_passive_entity: false
+    platform: select
+    restore_on_reconnect: false
+    select_options:
+      2h: 2h
+      4h: 4h
+      6h: 6h
+      8h: 8h
+      Cancel: 'OFF'
+- sensor:
+    device_class: duration
+    entity_category: diagnostic
+    friendly_name: Renpho Air - Countdown Left
+    icon: ''
+    id: '20'
+    platform: sensor
+    unit_of_measurement: m
+- sensor:
+    entity_category: diagnostic
+    friendly_name: Renpho Air - Lamp
+    id: '108'
+    platform: sensor
+- select:
+    entity_category: config
+    friendly_name: Renpho Air - AQ Light
+    id: '109'
+    is_passive_entity: false
+    platform: select
+    restore_on_reconnect: false
+    select_options:
+      aq_breathe: Breathe
+      aq_off: 'OFF'
+      aq_on: Full ON
